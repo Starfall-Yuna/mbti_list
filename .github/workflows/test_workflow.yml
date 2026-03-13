@@ -67,9 +67,10 @@ jobs:
       pages: write
       id-token: write
 
+    # github-pages 환경 배포
     environment:
       name: github-pages
 
     steps:
       - name: Deploy Github pages
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4  # page 배포 기능 활용
